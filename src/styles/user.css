@@ -1,0 +1,236 @@
+.user {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.user-profile-container-site {
+    padding: 0 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-addr-container-site,
+.user-personal-data-container-site {
+    width: 100%;
+    background-color: var(--color-white);
+    padding: 10px;
+    border-radius: 0.25rem;
+    /* text-align: center; */
+}
+
+.user-addr-container-site form,
+.user-personal-data-container-site form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-addr-container-site input,
+.user-personal-data-container-site input {
+    border: none;
+    width: 100%;
+    padding: 2px;
+}
+
+.user-addr-container-site input:focus,
+.user-personal-data-container-site input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.address-card-box {
+    overflow-Y: scroll;
+    display: flex;
+    flex-direction: column;
+    border: 2px lightgray;
+    height: 350px;
+    padding: 10px;
+}
+
+.address-card {
+    text-align: left;
+    border: 1px solid var(--color-grey);
+    border-radius: 0.25rem;
+    margin: 10px 0;
+    padding: 20px;
+
+}
+
+.address p {
+    margin: 0;
+}
+
+.addr-title {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.addr-title svg {
+    color: yellow;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.actions-btn {
+    margin-top: 1rem;
+}
+
+.actions-btn button {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.actions-btn {
+    position: relative;
+    text-align: right;
+}
+
+.addr-delete {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.user-addr-form-title,
+.user-data-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.user-personal-data-container-site .form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-personal-data-container-site .form-group fieldset {
+    width: 100%;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.button-atualiza,
+.btn-adicionar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;
+}
+
+.menu-client {
+    display: flex;
+    max-width: 200px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-client ul {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    padding: 10px;
+    border-radius: 0.25rem;
+}
+
+.menu-client ul li {
+    margin: 10px 0;
+    transition: .3s ease;
+}
+
+.menu-client ul li svg {
+    margin-right: 10px;
+}
+
+.menu-client ul li:hover {
+    opacity: .7;
+}
+.foto-perfil{
+    left: -3px;
+    border-radius: 50%;
+    top: 0;
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+}
+.foto-perfil p{
+    display: none;
+}
+.foto-perfil:hover p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+.foto-perfil:hover{
+    transition: .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.foto-perfil-add{
+    left: -3px;
+    border-radius: 50%;
+    top: 0;
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+    border: 1px solid #646464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto-perfil-add p{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+.pefil-pessoa input{
+    display: none;
+}
+@media (max-width: 850px) {
+    .user {
+        padding: 0;
+    }
+
+    .menu-client {
+        max-width: 60px;
+    }
+
+    .user-profile-container-site {
+        flex-wrap: wrap;
+
+    }
+
+    .address-card {
+        width: 100%;
+    }
+
+    .form-group {
+        flex-wrap: wrap;
+    }
+
+    .menu-client span {
+        display: none;
+    }
+
+    .user-addr-container-site {
+        margin: 0;
+    }
+}

@@ -1,0 +1,37 @@
+.shipping-box {
+    align-items: center;
+    height: fit-content !important;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.shipping-boxcked + label,
+.shipping-box input:checked + label {
+    border:1px solid #000;
+    border-radius: 0.25rem;
+}
+.shipping-box input {
+    visibility: hidden;
+}
+
+.shipping-box label {
+    padding: 8px;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagem-frete {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.logo-frete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

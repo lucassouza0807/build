@@ -1,0 +1,35 @@
+.side {
+    border: 1px solid green;
+    width: 220px;
+    height: 420px;
+}   
+
+@media screen and (max-width: 720px) {
+    .menu-lat {
+        display: none;
+    }
+    .side {
+        display: none;
+    }
+}
+
+.prod {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-product {
+    width: 236px !important;
+}
+
+.index-products {
+    display: flex;
+    flex-direction: row;
+    padding-left: 7px;
+}
+
+.menu-lat {
+    width: 320px;
+    height: 700px;
+}
+

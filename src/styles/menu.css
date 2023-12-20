@@ -1,0 +1,324 @@
+.carrinho{
+  position: relative;
+}
+.carrinho span{
+  position: absolute;
+  font-size: 8px;
+  left: 25px;
+  top: 5px;
+}
+.nv_in {
+  background-color: rgba(22, 22, 23, 10);
+  transition: 1.3s;
+}
+
+.nv_out {
+  background-color: none;
+  transition: 1.3s;
+}
+
+.display_false {
+  display: none;
+}
+
+.busca-container {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.display_true {
+  display: block;
+}
+
+.pesquisar {
+  width: 100px;
+  background-color: white;
+}
+
+.accordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  background-color: rgba(22, 22, 23, 10);
+  color: #444;
+  width: 100%;
+  top: 0;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: absolute;
+  z-index: 1000;
+  transition: all 0.2s ease;
+  position: fixed;
+
+}
+
+.accordion.active {
+  padding: 18px;
+  height: 200px;
+  z-index: 1000;
+}
+
+.accordion .pesquisa {
+  display: none;
+}
+
+.accordion.active .pesquisa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+
+}
+
+.accordion.active input {
+  width: 100%;
+  border: none;
+  color: white;
+  height: 50px;
+  background-color: rgba(22, 22, 23, .8);
+  font-size: large;
+  font-weight: bold;
+  width: 40vw;
+  border-radius: 15px;
+  padding-left: 15px;
+
+}
+
+.accordion.active .sugestions {
+  display: none;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 50px;
+  width: 40vw;
+  max-height: 300px;
+  
+  overflow-x: scroll;
+  position: absolute;
+  background-color: rgba(22, 22, 23, 10);
+}
+
+.accordion.active .mais_pesquisados {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion.active input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.accordion.active .lupa {
+  max-width: 50px;
+  width: 35%;
+  position: relative;
+  margin-right: 12px;
+  height: 2rem;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+}
+
+.results span {
+  color: "white";
+
+}
+
+.form svg {
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+.close_btn {
+  display: none;
+}
+.accordion.accordion .form {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 0.055rem solid #646464;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_appear {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.submt_btn {
+  background: none;
+  border: none;
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .not_appear {
+    display: none;
+  }
+
+}
+
+/* Mobile-first approach */
+/* Styles for screens up to 767px wide (e.g., smartphones) */
+@media screen and (max-width: 980px) {
+  .close_btn {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 999999999;
+    margin-bottom: 10px;
+  }
+  .carrinho span{
+    position: absolute;
+    font-size: 8px;
+    left: 10px;
+    top: 10px;
+  }
+  .close_btn svg {
+    cursor: pointer;
+    float: right;
+    color: white;
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .nav-list-mobile {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: -100%;
+    z-index: 10;
+    left: 0;
+    opacity: 0.5;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 40px 30px;
+    background-color: rgba(22, 22, 23, 10);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: 0.85s cubic-bezier(0.25, 0.7, 0.6, 1);
+    transition: 0.85s cubic-bezier(0.25, 0.7, 0.6, 1);
+  }
+
+  .nav-list-mobile .active {
+    width: 100%;
+  }
+
+  .nav-list-mobile.active {
+    top: 0;
+    height: 100vh;
+    opacity: 1;
+  }
+  .nav-list-mobile ul{
+    overflow-y: auto;
+  }
+  .menu {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu svg {
+    color: var(--falcon-navbar-color);
+  }
+
+  .lupa {
+    display: block;
+  }
+
+  .accordion.active input {
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 15px;
+  }
+
+  .accordion.active .pesquisa {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+
+  }
+
+  .accordion.active .sugestions {
+    display: none;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+    width: 90vw;
+    height: 200px;
+    overflow-x: scroll;
+    position: absolute;
+    background-color: rgba(22, 22, 23, 10);
+  }
+
+
+  .accordion.active {
+    border: none;
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .nv_responsive {
+    background-color: rgba(22, 22, 23, 10);
+
+  }
+
+  .not_appear {
+    display: none;
+  }
+
+  .menu {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.accordion.active .sugestions::-webkit-scrollbar {
+  width: 5px;
+}
+
+.accordion.active .sugestions::-webkit-scrollbar-track {
+  background: rgba(22, 22, 23, 10);
+}
+
+.accordion.active .sugestions::-webkit-scrollbar-thumb {
+  background-color: rgba(22, 22, 23, 10);
+  border-radius: 50px;
+  border: 3px solid red;
+}

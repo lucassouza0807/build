@@ -1,0 +1,36 @@
+.applied_filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    font-size: 10px;
+    height: 25px;
+    margin: 5px;
+    padding: 4px;
+}
+
+.filter-box {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 150px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.pix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    word-wrap: break-word;
+}
+.pix-value {
+    text-align: center;
+    width: inherit;
+    border-bottom: 12px;
+}

@@ -1,0 +1,71 @@
+.cupom {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0.25rem;
+    margin: 7px;
+    background-color: rgb(255, 229, 230);
+    
+}
+
+.cupom span {
+    color: rgb(156, 62, 62);
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+}
+.f {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 0.45rem;
+}
+
+@media screen and (max-width: 900px) {
+    .f {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cupom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .c_form  {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: 0.50rem;
+    }
+
+    .checkout {
+        width: 100%;
+    }
+    .c_form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c_form form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    .c_form input {
+        width: 100%;
+        border-bottom: 15px;
+    }
+    .c_form form button {
+        position: relative;
+        top: 0;
+    }
+    
+}

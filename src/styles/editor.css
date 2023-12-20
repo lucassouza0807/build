@@ -1,0 +1,377 @@
+.editor-area {
+    width: 400px;
+    height: 600px;
+    background-color: white;
+
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    background-color: #272c33;
+    ;
+}
+
+.upload-area {
+    padding: 7px;
+    width: 100%;
+}
+
+.color-pick {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.controls {
+    align-items: center;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    padding-right: 35px;
+}
+
+.cart-sticker {
+    color: white;
+}
+.i {
+    color: white;
+}
+
+.ctr-btns span {
+    padding-left: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.ctr-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.layer_label {
+    width: 35px;
+}
+.ctr-btns  button{
+    width: 150px;
+    margin: 8px;
+}
+.teste {
+    color: aqua;
+}
+
+
+.tabs button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    max-width: 200px;
+    width: 100%;
+    height: 70px;
+    background: none;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    color: white;
+    font-weight: 700;
+}
+
+.tabs button svg {
+    width: 100px;
+    height: 200px;
+    margin: 12px;
+    
+}
+
+.editor-tool {
+    width: 350px;
+    margin-right: 12px;
+}
+
+.btn-img img {
+    background: none;
+}
+
+.layers-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: row;
+    background-color: none;
+    margin: 3px;
+    border: none;
+}
+
+.upload-icon {
+    font-size: 1.5rem;
+}
+
+.image-scroll {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.images-from-user {
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.drop-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70px;
+    border: 1.5px solid white;
+    border-style: dashed;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+
+.btn-layer {
+    width: 90%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: row;
+    margin: 3px;
+    border: none;
+}
+
+.btn-img {
+
+    padding: 5px;
+    border: 1px solid red !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: row;
+    background-color: #272c33;
+    opacity: 0.6;
+    margin: 3px;
+    border: none;
+}
+
+.opt {
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+}
+.template-upload,
+.imagens-upload{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.template-upload button{
+    margin-left: 10px;
+    max-width: 100px;
+    width: 100%;
+}
+.tool {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: left;
+    background-color: #3f4652;
+}
+
+.editor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.element {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+.editor-full-size {
+    display: flex;
+
+}
+
+.controls h3 {
+    color: white;
+}
+
+.controls button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 30px;
+    background: none;
+    margin: 0 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #3f4652;
+}
+
+.editor-component {
+    display: flex;
+    flex-direction: column;
+    background-color: #272c33;
+}
+
+.meus-projetos {
+    padding-top: 70px;
+    background-color: aqua;
+}
+
+.free-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    width: 100%;
+}
+
+.zoom-area{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0 20px;
+    color: white;
+}
+.zoom-area form{
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(61, 69, 82, 0.5);
+}
+.zoom-area form input[type='range']{
+    display: flex;
+    justify-content: center;
+}
+.zoom-area form input[type='range']::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 1px;
+    background: #1a86c8;
+}
+.zoom-area form input[type='range']::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    margin-top: -6px;
+    background-color: blue;
+    border-radius: 60px;
+}
+.zoom-area svg{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.editor-main {
+    display: flex;
+    flex-direction: column;
+}
+.zoom-radio{
+    --falcon-gutter-x: 2rem;
+    --falcon-gutter-y: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--falcon-gutter-y));
+    margin-right: calc(-0.5 * var(--falcon-gutter-x));
+    margin-left: calc(-0.5 * var(--falcon-gutter-x));
+}
+.zoom-radio > * {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-right: calc(var(--falcon-gutter-x) * 0.5);
+    padding-left: calc(var(--falcon-gutter-x) * 0.5);
+    margin-top: var(--falcon-gutter-y);
+}
+
+.layer_controls {
+    cursor: pointer;
+    color: white;
+}
+
+.delete-layer {
+    color: red !important;
+}
+
+.produtos {
+    padding-left: 7px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.meterials {
+    margin: 8px;
+    width: 90%;
+    border-bottom: 0.01rem solid #eee;  
+}
+
+.qtd {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 950px){
+    .editor-main{
+        padding-top: 5rem;
+    }
+    .editor{
+        flex-wrap: wrap-reverse;
+    }
+    .tool{
+        height: auto;
+        background-color: #272c33;
+        z-index: 999;
+    }
+    .ctr-btns{
+        font-size: 10px;
+    }
+    .tabs{
+        flex-direction: row;
+        position: fixed;
+        height: 100px;
+        width: 100%;
+        background-color: #272c33;
+        bottom: 0;
+    }
+    .zoom-radio{
+        display: flex;
+    }
+}
